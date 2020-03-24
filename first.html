@@ -1,0 +1,63 @@
+<!Doctype html>
+<html ng-app="myapp" ng-controller="mctrl">
+<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+
+<style type="text/css">
+body{
+	background-image: url("hap.png");
+	background-size: cover;
+
+}
+#d1{
+	width: 800px;
+	height: 600px;
+	background:url(a.jpeg);
+	margin:10px auto;
+	animation: slide 20s infinite;
+}
+@keyframes slide{
+	25%{
+		background:url(a.jpeg);
+	}
+	30%{
+		background:url(b.jpeg);
+	}
+	40%{
+		background:url(c.jpeg);
+	}
+	50%{
+		background:url(d.jpeg);
+	}
+	
+	60%{
+		background:url(e.jpeg);
+	}
+	
+	80%{
+		background:url(f.jpeg);
+	}
+	
+	100%{
+		background:url(g.jpeg);
+	}
+}
+	</style>
+	
+	</head>
+<body>
+
+<div id="d1">
+	
+<audio autoplay>
+	<source src="rs.mp3" type="audio/mpeg">
+</audio>
+</div><br>
+<center><button class="btn-success" ng-click="doNext()">ESHANI CLICK HERE!!!</button></center>	
+	</body>
+</html>
+
+

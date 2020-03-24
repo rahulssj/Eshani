@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+<style type="text/css">
+body{
+	background-image: url({{myimg}});
+	background-size: cover;
+
+}
+#d1{
+	background-image: url("esd.jpg");
+	width: 500px;
+	height: 500px;
+
+}
+#d2{
+	background-image: url("ab.jpg");
+	width: 800px;
+	height: 600px;
+	animation: slide 20s infinite;
+
+}
+@keyframes slide{
+	25%{
+		background:url(ab.jpg);
+	}
+	50%{
+		background:url(hj.jpg);
+	}
+	75%{
+		background:url(images.png);
+	}
+	100%{
+		background:url(jk.jpg);
+	}
+	
+		
+}
+
+</style>
+
+</head>
+<body>
+<audio controls autoplay>
+  <source src="eshani.mp3" type="audio/ogg" >
+  
+</audio>
+
+<div id="{{idd}}">
+	
+
+</div>
+<button class="btn-primary" ng-click="done()">Click me!!!</button>
+</body>
+</html>
